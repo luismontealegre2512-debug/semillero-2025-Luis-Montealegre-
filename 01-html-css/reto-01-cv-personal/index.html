@@ -3,395 +3,227 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Luis Manuel Montealegre García · Ingeniería Industrial</title>
+    <title>Portafolio - Luis Manuel Montealegre</title>
 
-    <!-- SEO básico -->
-    <meta name="description" content="Portafolio de Luis Manuel Montealegre García, estudiante de Ingeniería Industrial, en formación en desarrollo web y análisis de datos, con experiencia en logística, procesos y análisis de datos.">
+    <meta name="description" content="Mi portafolio como estudiante de Ingeniería Industrial y Desarrollo Web">
 
-    <!-- Open Graph (para compartir en redes) -->
-    <meta property="og:title" content="Luis Manuel Montealegre García · Ingeniería Industrial" />
-    <meta property="og:description" content="Estudiante de Ingeniería Industrial con experiencia en logística, procesos y análisis de datos, en formación en desarrollo web y análisis de datos." />
-    <meta property="og:type" content="website" />
-
-    <!-- Fuente de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
 
-    <!-- Estilos -->
     <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <!-- Cintillo superior -->
-    <div class="top-bar">
-        <div class="container top-bar-inner">
-            <span class="status-dot"></span>
-            <span>Ingeniería Industrial · Logística · Procesos · Datos</span>
+    
+    <div class="barra-superior">
+        <div class="contenedor">
+            <span>🟢 Disponible para proyectos</span> | 
+            <span>Ingeniería Industrial + Datos</span>
         </div>
     </div>
 
-    <!-- ENCABEZADO (solo el menú) -->
-    <header class="site-header">
-        <div class="container">
-            <nav class="navbar">
-                <div class="nav-left">
-                    <div class="nav-brand">
-                        <span class="brand-mark">LM</span>
-                        <span class="brand-text">Luis Manuel Montealegre García</span>
-                    </div>
-                </div>
-                <input type="checkbox" id="nav-toggle" class="nav-toggle" />
-                <label for="nav-toggle" class="nav-toggle-label">
-                    <span></span>
-                </label>
-                <ul class="nav-links">
-                    <li><a href="#about">Sobre mí</a></li>
-                    <li><a href="#skills">Habilidades</a></li>
-                    <li><a href="#trajectory">Trayectoria</a></li>
-                    <li><a href="#projects">Proyectos</a></li>
-                    <li><a href="#contact">Contacto</a></li>
+    <header class="encabezado">
+        <div class="contenedor navegacion">
+            <div class="logo">
+                <span class="iniciales">LM</span>
+                <span class="nombre-completo">Luis Manuel M.G.</span>
+            </div>
+            
+            <nav>
+                <ul class="lista-menu">
+                    <li><a href="#sobre-mi">Sobre mí</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#trayectoria">Trayectoria</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <!-- HERO (presentación principal, sin foto) -->
-    <section class="hero" id="inicio">
-        <div class="container hero-container">
-            <div class="hero-text fade-in">
-                <p class="hero-kicker">Portafolio · 2025</p>
-                <h1>Hola, soy Luis Manuel Montealegre García.</h1>
-                <p class="hero-subtitle">
-                    Soy estudiante de Ingeniería Industrial, en formación en desarrollo web y análisis de datos.
-                    He trabajado en entornos de logística, procesos y análisis de información, donde mi rol ha sido
-                    dar visibilidad a lo que está pasando: inventarios, envíos y resultados, para que los equipos
-                    tomen decisiones con datos y no solo con intuición.
+    <section id="inicio" class="portada">
+        <div class="contenedor">
+            <div class="texto-portada">
+                <p class="etiqueta">Portafolio 2025</p>
+                <h1>Hola, soy Luis Manuel Montealegre.</h1>
+                <p class="descripcion">
+                    Soy estudiante de Ingeniería Industrial aprendiendo desarrollo web. 
+                    Me gusta conectar la logística y los procesos con el análisis de datos 
+                    para tomar mejores decisiones.
                 </p>
-                <div class="hero-actions">
-                    <a href="#projects" class="btn primary">Ver experiencia y proyectos</a>
-                    <a href="#contact" class="btn ghost">Ponerse en contacto</a>
+                
+                <div class="botones">
+                    <a href="#proyectos" class="btn-primario">Ver mis proyectos</a>
+                    <a href="#contacto" class="btn-secundario">Contáctame</a>
                 </div>
-                <div class="hero-meta">
-                    <span>Ingeniería Industrial · IPN UPIICSA</span>
-                    <span>En formación en desarrollo web y análisis de datos</span>
+
+                <div class="info-extra">
+                    <small>📍 IPN UPIICSA · Formación en Datos y Web</small>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contenido principal -->
     <main>
-        <!-- Sobre mí -->
-        <section id="about" class="section">
-            <div class="container two-cols">
-                <div>
+        
+        <section id="sobre-mi" class="seccion">
+            <div class="contenedor contenedor-flexible">
+                <div class="columna-texto">
                     <h2>Sobre mí</h2>
                     <p>
-                        Estudio Ingeniería Industrial y me interesa la parte donde los procesos, los datos y la operación
-                        se conectan. Me siento cómodo revisando información, entendiendo qué está pasando y ayudando a que
-                        las cosas fluyan mejor, ya sea en inventarios, envíos o servicio a clientes internos.
+                        Estudio Ingeniería Industrial y me interesa mucho cómo se conectan los procesos 
+                        y los datos. Me siento cómodo revisando información para entender qué pasa 
+                        en los inventarios o envíos y hacer que todo fluya mejor.
                     </p>
                     <p>
-                        Estoy en formación en desarrollo web y análisis de datos porque quiero complementar mi perfil con
-                        habilidades técnicas que me permitan construir reportes, tableros e ideas accionables. Me gusta
-                        trabajar con información real, colaborar con diferentes áreas y dejar cada proceso un poco mejor
-                        de como lo encontré.
+                        Actualmente estoy aprendiendo a programar y a analizar datos para poder 
+                        crear mis propios reportes y herramientas. Mi objetivo es dejar cada proceso 
+                        mejor de como lo encontré.
                     </p>
                 </div>
-                <aside class="highlight-box">
-                    <h3>Resumen de perfil</h3>
+                
+                <div class="caja-destacada">
+                    <h3>Resumen rápido</h3>
                     <ul>
-                        <li>🎓 Estudiante de Ingeniería Industrial (IPN · UPIICSA).</li>
-                        <li>📊 En formación en desarrollo web y análisis de datos.</li>
-                        <li>🚚 Experiencia en logística, procesos y análisis de datos.</li>
-                        <li>📈 Enfoque en mejora continua, efectividad y aprendizaje constante.</li>
+                        <li>🎓 Estudiante de Ingeniería Industrial (IPN).</li>
+                        <li>📊 Aprendiendo Web y Análisis de Datos.</li>
+                        <li>🚚 Experiencia en logística y almacén.</li>
+                        <li>📈 Me gusta la mejora continua.</li>
                     </ul>
-                </aside>
-            </div>
-        </section>
-
-        <!-- Habilidades -->
-        <section id="skills" class="section section-alt">
-            <div class="container">
-                <h2>Habilidades</h2>
-                <p class="section-intro">
-                    Habilidades técnicas y blandas desarrolladas a través de mi formación en Ingeniería Industrial,
-                    así como de mi experiencia en entornos de logística, procesos y análisis de datos.
-                </p>
-
-                <div class="skills-grid">
-                    <article class="skill-card">
-                        <h3>Operaciones y análisis de datos</h3>
-                        <ul>
-                            <li>Logística y cadena de suministro.</li>
-                            <li>Control de inventarios y gestión de almacén.</li>
-                            <li>Recopilación, limpieza y organización de bases de datos (SQL).</li>
-                            <li>Identificación de tendencias, patrones y correlaciones alineadas a objetivos.</li>
-                            <li>Uso de Power BI para análisis y visualización de indicadores.</li>
-                        </ul>
-                    </article>
-
-                    <article class="skill-card">
-                        <h3>Herramientas y metodologías</h3>
-                        <ul>
-                            <li>Elaboración de diagramas de flujo de procesos (Visio).</li>
-                            <li>Gestión y actualización de bases de datos y reportes mensuales.</li>
-                            <li>Conocimientos en Lean Six Sigma (White Belt y Green Belt).</li>
-                            <li>Formación en logística y cadena de suministro.</li>
-                            <li>Formación en Python para análisis básico de datos.</li>
-                        </ul>
-                    </article>
-
-                    <article class="skill-card">
-                        <h3>Habilidades personales</h3>
-                        <ul>
-                            <li>Liderazgo y trabajo colaborativo.</li>
-                            <li>Comunicación asertiva y trato profesional.</li>
-                            <li>Gestión de activos y resolución de problemas.</li>
-                            <li>Creatividad y pensamiento orientado a soluciones.</li>
-                            <li>Inglés y portugués a nivel intermedio.</li>
-                        </ul>
-                    </article>
                 </div>
             </div>
         </section>
 
-        <!-- Trayectoria -->
-        <section id="trajectory" class="section">
-            <div class="container">
+        <section id="habilidades" class="seccion fondo-gris">
+            <div class="contenedor">
+                <h2>Mis Habilidades</h2>
+                <p>Lo que he aprendido en la carrera y en mis trabajos anteriores.</p>
+
+                <div class="grilla-tarjetas">
+                    <div class="tarjeta">
+                        <h3>Operaciones y Datos</h3>
+                        <ul>
+                            <li>Logística y cadena de suministro</li>
+                            <li>Control de inventarios</li>
+                            <li>SQL (Manejo de bases de datos)</li>
+                            <li>Power BI (Visualización)</li>
+                        </ul>
+                    </div>
+
+                    <div class="tarjeta">
+                        <h3>Herramientas</h3>
+                        <ul>
+                            <li>Diagramas de flujo (Visio)</li>
+                            <li>Excel y Reportes</li>
+                            <li>Lean Six Sigma (White & Green Belt)</li>
+                            <li>Python (Básico)</li>
+                        </ul>
+                    </div>
+
+                    <div class="tarjeta">
+                        <h3>Soft Skills</h3>
+                        <ul>
+                            <li>Trabajo en equipo</li>
+                            <li>Comunicación efectiva</li>
+                            <li>Resolución de problemas</li>
+                            <li>Inglés y Portugués (Intermedio)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="trayectoria" class="seccion">
+            <div class="contenedor">
                 <h2>Trayectoria</h2>
 
-                <div class="timeline-grid">
-                    <!-- Educación -->
-                    <div>
-                        <h3>Educación</h3>
-                        <div class="timeline">
-                            <article class="item">
-                                <h4>Ingeniería Industrial · IPN UPIICSA</h4>
-                                <p class="item-meta">
-                                    Estudiante de Ingeniería Industrial
-                                </p>
-                                <p>
-                                    Formación enfocada en la optimización de procesos, logística, mejora continua
-                                    y análisis de información para la toma de decisiones. Desarrollo de competencias
-                                    cuantitativas, analíticas y de gestión de operaciones.
-                                </p>
-                            </article>
-
-                            <article class="item">
-                                <h4>Bachillerato · ENP 9 “Pedro de Alba”</h4>
-                                <p class="item-meta">
-                                    Bachillerato concluido
-                                </p>
-                                <p>
-                                    Bases académicas sólidas y desarrollo de habilidades de estudio, trabajo en equipo
-                                    y pensamiento crítico, que sirven como apoyo para mi formación profesional.
-                                </p>
-                            </article>
-                        </div>
-
-                        <h3>Cursos y certificaciones</h3>
-                        <div class="timeline">
-                            <article class="item">
-                                <h4>White Belt Lean Six Sigma</h4>
-                                <p class="item-meta">
-                                    International Lean Six Sigma
-                                </p>
-                            </article>
-                            <article class="item">
-                                <h4>Six Sigma Green Belt</h4>
-                                <p class="item-meta">
-                                    The Council for Six Sigma Certification
-                                </p>
-                            </article>
-                            <article class="item">
-                                <h4>Logística y cadena de suministros</h4>
-                                <p class="item-meta">
-                                    Udemy
-                                </p>
-                            </article>
-                            <article class="item">
-                                <h4>Python</h4>
-                                <p class="item-meta">
-                                    Udemy
-                                </p>
-                            </article>
-                            <article class="item">
-                                <h4>Analista de datos</h4>
-                                <p class="item-meta">
-                                    Coursera
-                                </p>
-                            </article>
-                        </div>
+                <div class="bloque-trayectoria">
+                    <h3>Educación</h3>
+                    <div class="item-lista">
+                        <h4>Ingeniería Industrial · IPN UPIICSA</h4>
+                        <p>En curso. Enfocado en optimización y logística.</p>
                     </div>
-
-                    <!-- Experiencia -->
-                    <div>
-                        <h3>Experiencia profesional</h3>
-                        <div class="timeline">
-                            <article class="item">
-                                <h4>Grupo Pochteca</h4>
-                                <p class="item-meta">
-                                    Experiencia en logística y cadena de suministro · Sep 2023 – May 2025
-                                </p>
-                                <ul>
-                                    <li>Contacto diario con líneas de transporte para coordinar fechas, horarios y condiciones de envío.</li>
-                                    <li>Seguimiento a envíos a nivel nacional, verificando estatus y apoyando en la resolución de incidencias.</li>
-                                    <li>Actualización de archivos de stock out y productos de lento movimiento para mantener visibilidad de inventarios.</li>
-                                    <li>Participación en actividades de control de inventarios y tareas operativas de almacén.</li>
-                                </ul>
-                            </article>
-
-                            <article class="item">
-                                <h4>Philip Morris Internacional</h4>
-                                <p class="item-meta">
-                                    Experiencia en análisis de datos · Feb 2023 – Ago 2023
-                                </p>
-                                <ul>
-                                    <li>Recopilación, limpieza y estructuración de bases de datos utilizando SQL.</li>
-                                    <li>Identificación de tendencias, patrones y correlaciones de acuerdo con objetivos definidos.</li>
-                                    <li>Apoyo en la toma de decisiones a partir de análisis cuantitativo.</li>
-                                    <li>Uso de Power BI para la visualización y seguimiento de indicadores clave.</li>
-                                </ul>
-                            </article>
-
-                            <article class="item">
-                                <h4>Dentegra Seguros Dentales</h4>
-                                <p class="item-meta">
-                                    Experiencia en procesos operativos y documentación · Ago 2022 – Ene 2023
-                                </p>
-                                <ul>
-                                    <li>Elaboración y documentación de diagramas de flujo de procesos (Visio).</li>
-                                    <li>Apoyo en investigaciones de mercado y análisis de información comercial.</li>
-                                    <li>Gestión y actualización de bases de datos internas.</li>
-                                    <li>Participación en la elaboración de reportes mensuales de resultados.</li>
-                                </ul>
-                            </article>
-                        </div>
+                    <div class="item-lista">
+                        <h4>Bachillerato · ENP 9</h4>
+                        <p>Concluido.</p>
                     </div>
                 </div>
-            </div>
-        </section>
 
-        <!-- Proyectos -->
-        <section id="projects" class="section section-alt">
-            <div class="container">
-                <h2>Proyectos y aplicaciones</h2>
-                <p class="section-intro">
-                    Ejemplos de cómo he aplicado mis conocimientos en Ingeniería Industrial, logística
-                    y análisis de datos en entornos profesionales.
-                </p>
-
-                <div class="cards">
-                    <article class="card project-card">
-                        <div class="project-header">
-                            <h3>Monitoreo de envíos e inventarios</h3>
-                            <span class="project-tag">Logística</span>
-                        </div>
-                        <p>
-                            Apoyo en el seguimiento diario de envíos a nivel nacional y en la actualización de
-                            archivos de stock out y productos de lento movimiento, contribuyendo a mejorar la
-                            visibilidad del inventario y la continuidad del abastecimiento.
-                        </p>
-                        <div class="project-footer">
-                            <span class="project-meta">Grupo Pochteca · Cadena de suministro</span>
-                        </div>
-                    </article>
-
-                    <article class="card project-card">
-                        <div class="project-header">
-                            <h3>Tableros para análisis de datos</h3>
-                            <span class="project-tag">Datos</span>
-                        </div>
-                        <p>
-                            Construcción y mantenimiento de bases de datos, identificación de tendencias y patrones
-                            y preparación de información para su visualización en Power BI, facilitando la lectura
-                            de resultados y el seguimiento de indicadores clave del negocio.
-                        </p>
-                        <div class="project-footer">
-                            <span class="project-meta">Philip Morris Internacional · Análisis de datos</span>
-                        </div>
-                    </article>
-
-                    <article class="card project-card">
-                        <div class="project-header">
-                            <h3>Documentación y mejora de procesos</h3>
-                            <span class="project-tag">Procesos</span>
-                        </div>
-                        <p>
-                            Elaboración de diagramas de flujo, apoyo en investigaciones de mercado, gestión de
-                            bases de datos y participación en reportes de resultados, aportando estructura y
-                            claridad a los procesos internos de la organización.
-                        </p>
-                        <div class="project-footer">
-                            <span class="project-meta">Dentegra Seguros Dentales · Procesos</span>
-                        </div>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contacto -->
-        <section id="contact" class="section">
-            <div class="container contact-layout">
-                <div>
-                    <h2>Contacto</h2>
-                    <p class="section-intro">
-                        Si deseas conocer más sobre mi perfil o explorar una posible colaboración,
-                        puedes contactarme a través de los siguientes medios:
-                    </p>
-                    <ul class="contact-list">
-                        <li>
-                            <strong>Teléfono:</strong>
-                            <a href="tel:+525611407837">
-                                (56) 11-40-78-37
-                            </a>
-                        </li>
-                        <li>
-                            <strong>Correo:</strong>
-                            <a href="mailto:luismontealegre2512@gmail.com">
-                                luismontealegre2512@gmail.com
-                            </a>
-                        </li>
-                        <li>
-                            <strong>LinkedIn:</strong>
-                            <a href="https://www.linkedin.com/in/luis-montealegre-690183319" target="_blank">
-                                linkedin.com/in/luis-montealegre-690183319
-                            </a>
-                        </li>
-                        <li>
-                            <strong>GitHub / Portafolio técnico:</strong>
-                            <a href="#" target="_blank">
-                                Agregar enlace cuando esté disponible
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-
-                <aside class="contact-box">
-                    <h3>Información para contacto</h3>
-                    <p>
-                        En tu mensaje puedes incluir:
-                    </p>
+                <div class="bloque-trayectoria">
+                    <h3>Cursos</h3>
                     <ul>
-                        <li>Tipo de proyecto, vacante o área de interés.</li>
-                        <li>Principales responsabilidades del rol.</li>
-                        <li>Plazos aproximados y objetivos principales.</li>
+                        <li>White & Green Belt Lean Six Sigma</li>
+                        <li>Logística (Udemy)</li>
+                        <li>Python y Análisis de Datos (Coursera)</li>
                     </ul>
-                </aside>
+                </div>
+
+                <div class="bloque-trayectoria">
+                    <h3>Experiencia Laboral</h3>
+                    
+                    <div class="item-trabajo">
+                        <h4>Grupo Pochteca (2023 - 2025)</h4>
+                        <p><strong>Logística:</strong> Coordinación con transporte, seguimiento de envíos y control de inventarios.</p>
+                    </div>
+
+                    <div class="item-trabajo">
+                        <h4>Philip Morris Internacional (2023)</h4>
+                        <p><strong>Datos:</strong> Limpieza de datos con SQL y reportes en Power BI.</p>
+                    </div>
+
+                    <div class="item-trabajo">
+                        <h4>Dentegra Seguros (2022 - 2023)</h4>
+                        <p><strong>Procesos:</strong> Documentación de diagramas de flujo y bases de datos.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="seccion fondo-gris">
+            <div class="contenedor">
+                <h2>Proyectos Académicos y Laborales</h2>
+                
+                <div class="grilla-tarjetas">
+                    <div class="tarjeta proyecto">
+                        <h3>Monitoreo de Envíos</h3>
+                        <span class="etiqueta-pequena">Logística</span>
+                        <p>Mejoré la visibilidad de inventarios y seguimiento de transporte nacional.</p>
+                    </div>
+
+                    <div class="tarjeta proyecto">
+                        <h3>Tableros de Datos</h3>
+                        <span class="etiqueta-pequena">Power BI</span>
+                        <p>Creación de dashboards para ver indicadores clave del negocio.</p>
+                    </div>
+
+                    <div class="tarjeta proyecto">
+                        <h3>Manuales de Procesos</h3>
+                        <span class="etiqueta-pequena">Documentación</span>
+                        <p>Diagramas de flujo para estandarizar operaciones internas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="seccion">
+            <div class="contenedor">
+                <h2>Contacto</h2>
+                <p>Si te interesa mi perfil, puedes escribirme:</p>
+                
+                <ul class="lista-contacto">
+                    <li>📞 (56) 11-40-78-37</li>
+                    <li>📧 <a href="mailto:luismontealegre2512@gmail.com">luismontealegre2512@gmail.com</a></li>
+                    <li>🔗 <a href="https://www.linkedin.com/in/luis-montealegre-690183319" target="_blank">LinkedIn</a></li>
+                </ul>
             </div>
         </section>
     </main>
 
-    <!-- Pie de página -->
-    <footer class="site-footer">
-        <div class="container footer-inner">
-            <p>© 2025 Luis Manuel Montealegre García. Página creada como parte de mi formación profesional.</p>
-            <a href="#inicio" class="back-to-top">Volver arriba ↑</a>
+    <footer>
+        <div class="contenedor">
+            <p>© 2025 Luis Manuel Montealegre. Página creada para el Semillero.</p>
         </div>
     </footer>
+
 </body>
 </html>
